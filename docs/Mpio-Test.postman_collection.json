@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "bc07e7a3-98ed-4ca1-ae3e-9866b3908b54",
+		"name": "Mampu-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10902234"
+	},
+	"item": [
+		{
+			"name": "Get Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/v1/balance/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"balance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 2,\n    \"amount\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/v1/withdraw",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
